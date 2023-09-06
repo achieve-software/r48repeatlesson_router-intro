@@ -7,10 +7,10 @@ const Nav = () => {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/instructors">Instructors</Link>
+        <NavLink to="/instructors" style={({isActive})=>({color:isActive && "red"})}>Instructors</NavLink>
       </li>
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/contact" style={({isActive})=>({color:isActive && "blue"})}>Contact</NavLink>
       </li>
     </ul>
   );
